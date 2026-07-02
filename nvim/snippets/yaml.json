@@ -1,0 +1,18 @@
+{
+  "ytt required string": {
+    "prefix": "yttreq",
+    "body": [
+      "#@schema/validation (\"${1:varname} must be set\", lambda v: v != \"\")",
+      "${1:varname}: \"\""
+    ],
+    "description": "ytt schema validation for required string"
+  },
+
+  "print test": {
+    "prefix": "pr",
+    "body": [
+      "print: $1"
+    ],
+    "description": "test snippet"
+  }
+}
