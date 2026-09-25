@@ -1,19 +1,30 @@
 return {
     {
-        'akinsho/toggleterm.nvim', version = "*",
-        lazy = false,
+        "akinsho/toggleterm.nvim",
+        version = "*",
         keys = {
-            {"<M-t>", "<cmd>ToggleTerm size=10 direciton=horizontal<CR>"}
+            {
+                "<M-t>",
+                "<cmd>ToggleTerm size=10 direction=horizontal<cr>",
+                desc = "Toggle terminal",
+            },
+            {
+                "<leader>tt",
+                "<cmd>ToggleTerm size=10 direction=horizontal<cr>",
+                desc = "Toggle terminal",
+            },
+            {
+                "<leader>ts",
+                "<cmd>ToggleTermSendCurrentLine 1<cr>",
+                desc = "Send line to terminal",
+            },
+            {
+                "<leader>ts",
+                "<cmd>ToggleTermSendVisualLines 1<cr>",
+                desc = "Send selection to terminal",
+                mode = "v",
+            },
         },
-        config = function(_, opts)
-            require('toggleterm').setup()
-
-            local wk = require('which-key')
-            wk.add({
-                {"<leader>t", group="Terminal"},
-                {"<leader>ts", "<cmd>ToggleTermSendCurrentLine 1<CR>", desc="Send Line"},
-                {"<leader>ts", "<cmd>ToggleTermSendVisualLines 1<CR>", desc="Send Visual Selection", mode={"v"}},
-            })
-        end
-    }
+        opts = {},
+    },
 }

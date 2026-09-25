@@ -15,11 +15,21 @@ return {
         config = function()
             local cmp = require("cmp")
             local luasnip = require("luasnip")
+
+            luasnip.config.set_config({
+                history = true,
+                updateevents = "TextChanged,TextChangedI",
+                enable_autosnippets = true,
+            })
+
+
             require("luasnip.loaders.from_vscode").lazy_load({
                 paths = {
                     vim.fn.stdpath("config") .. "/snippets",
                 },
             })
+
+            require("snippets.global")
 
             cmp.setup({
                 snippet = {

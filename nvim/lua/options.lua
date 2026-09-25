@@ -38,7 +38,8 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 -----------------------------------------------------------
 -- Copilot
 -----------------------------------------------------------
-vim.g.copilot_workspace_folders = { "~/Documents/source/repos/root/src/" }
+vim.g.copilot_workspace_folders = { "~/source/repos/sevenwonders/src/" }
+vim.g.copilot_enabled = false
 
 -----------------------------------------------------------
 -- Hacks

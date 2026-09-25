@@ -11,12 +11,12 @@ return {
             },
             {
                 "<leader>ep",
-                "<cmd>Trouble diagnostics next<cr>",
+                "<cmd>Trouble diagnostics previous<cr>",
                 desc = "Previous diagnostic",
             },
             {
                 "<leader>en",
-                "<cmd>Trouble diagnostics prev<cr>",
+                "<cmd>Trouble diagnostics next<cr>",
                 desc = "Next diagnostic",
             },
         }

@@ -22,6 +22,10 @@ return {
             }
             require('which-key').add({
                 {"<leader>ff", require('telescope.builtin').find_files, desc="Find files"},
+                { "<leader>fg", function() require("telescope.builtin").live_grep() end, desc = "Live grep" },
+                { "<leader>fB", function() require("telescope.builtin").buffers() end, desc = "Buffers" },
+                { "<leader>fr", function() require("telescope.builtin").oldfiles() end, desc = "Recent files" },
+                { "<leader>fh", function() require("telescope.builtin").help_tags() end, desc = "Help tags" },
             })
         end
     },

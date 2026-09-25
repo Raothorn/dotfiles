@@ -1,6 +1,6 @@
 require('options')
 require("config.lazy")
-require('plugin_config')
+require("plugin_config")
 require('keybindings')
 
 
