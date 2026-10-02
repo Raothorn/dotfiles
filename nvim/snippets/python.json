@@ -1,0 +1,9 @@
+{
+    "Dictionary Column": {
+        "prefix": "dictcol",
+        "body": [
+            "self.$1"
+        ],
+        "description": "Dictionary column for model field"
+    }
+}

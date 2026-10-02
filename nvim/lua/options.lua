@@ -67,5 +67,5 @@ autocmd CursorHold * lua vim.diagnostic.open_float(nil, { focusable = false })
 -----------------------------------------------------------
 -- Markdown
 -----------------------------------------------------------
-opt.conceallevel = 2
+opt.conceallevel = 0
 

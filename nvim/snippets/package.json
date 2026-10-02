@@ -9,6 +9,10 @@
       {
         "language": "haskell",
         "path": "./haskell.json"
+      },
+      {
+        "language": "python"
+        "path": "./python.json"
       }
     ]
   }

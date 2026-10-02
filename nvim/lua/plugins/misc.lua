@@ -23,11 +23,11 @@ return {
         opts = {},
     },
 
-    {
-        "phaazon/hop.nvim",
-        keys = {
-            { "<leader>jj", "<cmd>HopChar1<cr>", desc = "Hop to character" },
-        },
-        opts = {},
-    },
+    -- {
+    --     "yuki-yano/hop.nvim",
+    --     keys = {
+    --         { "<leader>jj", "<cmd>HopChar1<cr>", desc = "Hop to character" },
+    --     },
+    --     opts = {},
+    -- },
 }
