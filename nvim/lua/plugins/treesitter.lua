@@ -17,6 +17,8 @@ return {
                     "python",
                     "toml",
                     "vim",
+                    "vue",
+                    "html",
                     "vimdoc",
                     "yaml",
                 },
